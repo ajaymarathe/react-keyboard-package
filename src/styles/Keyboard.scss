@@ -1,0 +1,178 @@
+// Theme Variables
+// Default theme (Light)
+$background-color-light: #e0e7ff;
+$key-button-bg-light: #ffffff;
+$key-button-hover-bg-light: #e0e7ff;
+$key-button-active-bg-light: #d0d7ff;
+$text-color-light: #000000;
+
+// Dark theme
+$background-color-dark: #1e1e1e;
+$key-button-bg-dark: #333333;
+$key-button-hover-bg-dark: #444444;
+$key-button-active-bg-dark: #555555;
+$text-color-dark: #ffffff;
+
+// Light Theme Styles
+.light-theme {
+  .keyboard-container {
+    background-color: $background-color-light;
+    color: $text-color-light;
+
+    .key-button {
+      background: linear-gradient(145deg, $key-button-bg-light, #e6e6e6);
+      color: $text-color-light;
+
+      &:hover {
+        background: linear-gradient(145deg, $key-button-hover-bg-light, #c0c9ff);
+      }
+
+      &:active {
+        background: $key-button-active-bg-light;
+      }
+    }
+
+    .selected-key {
+      background: #9ab3ff;
+      color: $text-color-light;
+    }
+  }
+}
+
+// Dark Theme Styles
+.dark-theme {
+  .keyboard-container {
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+
+    .key-button {
+      background: linear-gradient(145deg, $key-button-bg-dark, #222222);
+      color: $text-color-dark;
+
+      &:hover {
+        background: linear-gradient(145deg, $key-button-hover-bg-dark, #333333);
+      }
+
+      &:active {
+        background: $key-button-active-bg-dark;
+      }
+    }
+
+    .selected-key {
+      background: #444444;
+      color: $text-color-dark;
+    }
+  }
+}
+
+// Keyboard Layout
+.keyboard-container {
+  display: inline-block;
+  padding: 1em;
+  background-color: #e0e7ff;
+  border-radius: 0.6em;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+
+  .main-keys, .extra-keys {
+    .keyboard-row {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 8px;
+    }
+  }
+
+  .extra-keys {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+  }
+
+  .arrow-keys {
+    .keyboard-row {
+      display: flex;
+      justify-content: center;
+
+      &:first-child .key-button {
+        visibility: hidden;
+      }
+
+      .key-button {
+        margin: 5px;
+        min-width: 50px;
+      }
+    }
+  }
+
+  .nav-keys {
+    .keyboard-row {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+// Key Button Styles
+.key-button {
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 10px;
+  margin: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  min-width: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background: linear-gradient(145deg, #e0e7ff, #c0c9ff);
+    transform: scale(1.05);
+  }
+
+  &:active {
+    background: #d0d7ff;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(0.95);
+  }
+
+  &.backspace-key {
+    flex: 0.5;
+    text-align: center;
+  }
+
+  &.tab-key {
+    min-width: 80px;
+  }
+
+  &.capslock-key {
+    min-width: 100px;
+  }
+
+  &.enter-key {
+    flex: 0.5;
+    text-align: center;
+  }
+
+  &.shift-key {
+    flex: 1.5;
+  }
+
+  &.space-button {
+    flex: 3;
+    min-width: 320px;
+  }
+
+  &.selected-key {
+    background: #9ab3ff;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  &.special-key {
+    min-width: 80px;
+    background: #d1d8ff;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
