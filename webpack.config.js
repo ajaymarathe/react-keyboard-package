@@ -1,4 +1,5 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/components/Keyboard.jsx',
@@ -15,11 +16,11 @@ module.exports = {
         use: 'babel-loader',
       },
       {
-        test: /\.scss$/, // Add this rule for SCSS files
+        test: /\.scss$/, // Handle SCSS files
         use: [
-          'style-loader', // Injects styles into DOM
-          'css-loader',   // Turns CSS into CommonJS
-          'sass-loader',  // Compiles Sass to CSS
+          'style-loader',
+          'css-loader',
+          'sass-loader',
         ],
       },
     ],
@@ -27,6 +28,13 @@ module.exports = {
   externals: {
     react: 'react',
   },
+  plugins: [
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'src/styles/Keyboard.scss', to: 'styles/Keyboard.scss' }, // Copy SCSS file to dist/styles
+      ],
+    }),
+  ],
   resolve: {
     extensions: ['.js', '.jsx'],
   },
