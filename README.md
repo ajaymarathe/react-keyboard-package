@@ -1,6 +1,6 @@
 # React Keyboard Package
 
-`React-Keyboard-Package` is a customizable virtual keyboard component for React applications, with support for light and dark themes.
+✨`React-Keyboard-Package` is a customizable virtual keyboard component for React applications, with support for light and dark themes.
 
 [![NPM](https://img.shields.io/npm/v/react-keyboard-package.svg)](https://www.npmjs.com/package/react-keyboard-package)
 [![NPM](https://img.shields.io/npm/dt/react-keyboard-package.svg)](https://www.npmjs.com/package/react-keyboard-package)
