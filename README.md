@@ -6,6 +6,12 @@
 [![NPM](https://img.shields.io/npm/dt/react-keyboard-package.svg)](https://www.npmjs.com/package/react-keyboard-package)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## Showcase
+
+Here’s how the `react-keyboard-package` component looks:
+
+![React Keyboard Light Mode](https://raw.githubusercontent.com/ajaymarathe/react-keyboard-package/refs/heads/master/public/images/ligth-mode.png)
+
 ## Installation
 
 Use npm to install `react-keyboard-package`:
