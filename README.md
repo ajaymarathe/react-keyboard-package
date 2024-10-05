@@ -87,7 +87,7 @@ $key-button-hover-bg-light: #b3c7ff;
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
-Thanks <3
+Thanks ❤️
 
 ## License
 
