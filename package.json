@@ -9,8 +9,18 @@
     "customizable",
     "react component",
     "theme support",
-    "npm package"
+    "npm package",
+    "react-keyboard-package"
   ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaymarathe/react-keyboard-package.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ajaymarathe/react-keyboard-package/issues"
+  },
+  "homepage": "https://github.com/ajaymarathe/react-keyboard-package#readme",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
