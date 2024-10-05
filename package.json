@@ -1,7 +1,16 @@
 {
   "name": "react-keyboard-package",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
+  "keywords": [
+    "react",
+    "virtual keyboard",
+    "keyboard",
+    "customizable",
+    "react component",
+    "theme support",
+    "npm package"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

@@ -91,4 +91,9 @@ Thanks <3
 
 ## License
 
-[MIT](https://github.com/ajaymarathe/react-keyboard-package/blob/master/LICENSE)
+MIT © [License](https://github.com/ajaymarathe/react-keyboard-package/blob/master/LICENSE)
+
+
+## Author
+Made with ❤️ by [Ajay Marathe](https://github.com/ajaymarathe)
+
