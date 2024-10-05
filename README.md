@@ -1,16 +1,23 @@
 # React Keyboard Package
 
-`react-keyboard-package` is a customizable virtual keyboard component for React applications, with support for light and dark themes.
+`React-Keyboard-Package` is a customizable virtual keyboard component for React applications, with support for light and dark themes.
+
+[![NPM](https://img.shields.io/npm/v/react-keyboard-package.svg)](https://www.npmjs.com/package/react-keyboard-package)
+[![NPM](https://img.shields.io/npm/dt/react-keyboard-package.svg)](https://www.npmjs.com/package/react-keyboard-package)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Installation
 
 Use npm to install `react-keyboard-package`:
+
 ```bash
 npm install react-keyboard-package
 ```
 
 ## Usage
+
 Import and use the Keyboard component in your React app:
+
 ```bash
 import React from 'react';
 import Keyboard from 'react-keyboard-package';
@@ -28,11 +35,12 @@ export default App;
 ```
 
 ## Props
-| Prop        | Type     | Default   | Description                                                        |
-|-------------|----------|-----------|--------------------------------------------------------------------|
-| `theme`     | string   | `"light"` | Sets the theme of the keyboard. Can be `"light"` or `"dark"`.      |
-| `onInit`    | function | `undefined` | Callback function triggered when the keyboard initializes.         |
-| `currentKey`| string   | `null`    | The current key being pressed or active.                           |
+
+| Prop         | Type     | Default     | Description                                                   |
+| ------------ | -------- | ----------- | ------------------------------------------------------------- |
+| `theme`      | string   | `"light"`   | Sets the theme of the keyboard. Can be `"light"` or `"dark"`. |
+| `onInit`     | function | `undefined` | Callback function triggered when the keyboard initializes.    |
+| `currentKey` | string   | `null`      | The current key being pressed or active.                      |
 
 ## Customization
 
@@ -60,9 +68,10 @@ $keyboard-padding: 10px; // Padding inside the keyboard
 $keyboard-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Box shadow of keyboard
 
 ```
+
 To override these variables, import the SCSS file and redefine the variables in your own project:
 
-```bash 
+```bash
 
 @import 'react-keyboard-package/dist/styles/Keyboard.scss';
 
@@ -79,6 +88,7 @@ Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
 Thanks <3
+
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/ajaymarathe/react-keyboard-package/blob/master/LICENSE)
